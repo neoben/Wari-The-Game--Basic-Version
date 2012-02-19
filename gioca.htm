@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+ "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<title>Wari The Game - Gioca</title>
+<link type="text/css" rel="stylesheet" href="layout-piattaforma.css">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+ <body oncontextmenu = "return false">  <!-- attributo non standard che da errore in validazione: disabilita il menu del tasto destro -->
+<div id="main">
+	<div id="header">
+	</div>
+	<div id="center">
+		<div id="menu">
+			<a href="index.htm"><img src="_immagini/home.gif" alt="home"></a>			<br>
+			<br>
+			<a href="storia.htm"><img src="_immagini/storia.gif" alt="storia del gioco"></a>
+			<br>
+			<br>
+			<a href="regole.htm"><img src="_immagini/regole.gif" alt="regole"></a>
+			<br>
+			<br>
+	        <a href="gioca.htm"><img src="_immagini/gioca.gif" alt="gioca"></a> 
+		</div>
+		<div id="page">
+			<div class="istruzioni">
+				COME GIOCARE:<br>
+				-click tasto sinistro: mossa del giocatore (svuota una casella e distribuisce i semi nelle case adiacenti)<br>
+ 				-click tasto destro: pesca (svuota il contenuto di una casella e incrementa il granaio opportuno)
+			</div>
+			<div class="pulsanti">
+				<button name="nuova_partita" id="nuova_partita" onclick="inizializza()" value="nuova_partita">Nuova Partita</button> 
+				<button name="resetta_griglia" id="resetta_griglia" onClick="resetta()" value="resetta_griglia">Resetta Griglia</button>
+				<label>Tempo Trascorso:</label>
+				<input name="timer" id="timer" type="text" value="" size="5" readonly="readonly">
+			</div>
+			<div id="piattaforma"></div>
+		</div>
+	</div>
+	<div id="footer">
+		<br>
+		Struttura e design sito interamente realizzati da neoben. <br>
+    -Test Browser: Mozilla Firefox 3.0.7, Internet Explorer 7 <br>
+		-Test Sistemi Operativi: Kubuntu 7.0, Windows Xp <br>
+	</div>
+</div>
+<script type="text/javascript" src="wari.js"></script>
+</body>
+</html> 
